@@ -1,5 +1,5 @@
 import React from 'react';
-import Typical from 'react-typical'; // Import the Typical component
+import { Typewriter } from 'react-simple-typewriter'; 
 import { FaLinkedin, FaRegFileAlt, FaEnvelope } from 'react-icons/fa';
 
 const links = [
@@ -31,15 +31,19 @@ const Home = () => (
         <h1
           className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-4 opacity-0 translate-y-10"
           style={{
-            animation: `fadeInUp 0.5s ease-out 1s forwards`,
+            animation: `fadeInUp 0.5s ease-out 2s forwards`,
           }}
         >
           Hello,{' '}
           <span className="text-primary">
-            <Typical
-              steps={['I’m Kalpana', 2000, '']}
-              loop={Infinity}
-              wrapper="span"
+            <Typewriter
+              words={['I’m Kalpana']}
+              loop={true}
+              cursor
+              cursorStyle="|"
+              typeSpeed={100}
+              deleteSpeed={50}
+              delaySpeed={2000}
             />
           </span>
         </h1>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import k_logo from '../static/videos/k_logo.mp4';
+import k_logo from '../static/images/k_logo.jpeg';
 
 const Header = () => {
   const location = useLocation();
