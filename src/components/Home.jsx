@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaLinkedin, FaRegFileAlt, FaEnvelope, FaSuitcase } from 'react-icons/fa';
+import Typical from 'react-typical'; // Import the Typical component
+import { FaLinkedin, FaRegFileAlt, FaEnvelope } from 'react-icons/fa';
 
 const links = [
   {
@@ -26,14 +27,21 @@ const Home = () => (
   <section className="home-page text-center flex items-center justify-center">
     <div className="container mx-auto px-4 md:px-8 lg:px-12">
       <div className="max-w-3xl mx-auto">
-        {/* Main Heading */}
+        {/* Main Heading with Typing Effect */}
         <h1
           className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-4 opacity-0 translate-y-10"
           style={{
             animation: `fadeInUp 0.5s ease-out 1s forwards`,
           }}
         >
-          Hello, I'm Kalpana
+          Hello,{' '}
+          <span className="text-primary">
+            <Typical
+              steps={['I’m Kalpana', 2000, '']}
+              loop={Infinity}
+              wrapper="span"
+            />
+          </span>
         </h1>
 
         {/* Subheading */}
@@ -43,7 +51,7 @@ const Home = () => (
             animation: `fadeInUp 0.5s ease-out 1.2s forwards`,
           }}
         >
-          A skilled UI Developer and Freelancer with over 2.3+ years of experience in delivering high-quality, user-focused web applications.
+          A skilled UI/Frontend Developer with 1.9+ years of experience in delivering high-quality, user-focused web applications.
         </p>
 
         {/* Description */}

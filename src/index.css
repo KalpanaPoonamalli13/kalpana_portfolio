@@ -13,7 +13,7 @@ body {
   }
   
   .home-page, .page {
-    @apply max-sm:m-4 md:w-[90vw] lg:w-[85vw] h-screen xl:h-[85vh] text-justify relative sm:border border-slate-300 rounded-lg shadow-md py-20 md:py-40 md:mb-4;
+    @apply max-sm:m-4 w-[90vw] lg:w-[85vw] h-[95vh] xl:h-[85vh] text-justify indent-8 relative sm:border border-slate-300 rounded-lg shadow-md py-0 sm:py-20 md:py-40 md:mb-4;
   }
 
   .page {
@@ -62,7 +62,7 @@ body {
 }
 
 .btn {
-  @apply bg-black/10 border border-slate-600 text-teal-600 inline-flex items-center justify-center gap-2 text-xs sm:text-sm md:text-lg font-medium py-2 px-3 sm:px-6 md:py-2.5 md:px-8 rounded shadow-lg transform transition-transform duration-300 hover:bg-teal-600/10 hover:shadow-2xl;
+  @apply bg-black/10 border border-slate-600 text-teal-600 inline-flex items-center justify-center gap-1 text-xs sm:text-sm md:text-lg font-medium py-2 px-3 sm:px-6 md:py-2.5 md:px-8 rounded shadow-lg transform transition-transform duration-300 hover:bg-teal-600/10 hover:shadow-2xl;
 }
 
 .badge {
